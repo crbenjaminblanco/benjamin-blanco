@@ -24,7 +24,7 @@ export const convertToUserTimezone = (date, hour, minute) => {
   }
 }
 
-export const generateICSContent = (events) => {
+export const generateICSContent = (events, platform) => {
   const now = new Date()
   const year = now.getFullYear()
   
@@ -36,9 +36,15 @@ export const generateICSContent = (events) => {
     'METHOD:PUBLISH',
     'X-WR-CALNAME:NFL',
     'X-WR-TIMEZONE:UTC',
-    'X-APPLE-CALENDAR-COLOR:#FF0000',
-    'X-APPLE-CALENDAR-COLOR-NAME:NFL'
+    'X-WR-CATEGORIES:NFL'
   ]
+
+  if (platform === 'ios') {
+    icsContent.push(
+      'X-APPLE-CALENDAR-COLOR:#FF0000',
+      'X-APPLE-CALENDAR-COLOR-NAME:NFL'
+    )
+  }
 
   events.forEach(event => {
     const eventYear = event.year || year
@@ -53,7 +59,7 @@ export const generateICSContent = (events) => {
       new Date(date.getTime() + 3 * 60 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z' :
       new Date(date.getTime() + 3 * 60 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
-    icsContent = icsContent.concat([
+    let eventContent = [
       'BEGIN:VEVENT',
       'DTSTAMP:' + now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
       'DTSTART:' + startTime,
@@ -61,8 +67,11 @@ export const generateICSContent = (events) => {
       'SUMMARY:' + event.title,
       'DESCRIPTION:' + event.description,
       'LOCATION:' + event.location,
+      'CATEGORIES:NFL',
       'END:VEVENT'
-    ])
+    ]
+
+    icsContent = icsContent.concat(eventContent)
   })
 
   icsContent.push('END:VCALENDAR')
@@ -70,7 +79,8 @@ export const generateICSContent = (events) => {
 }
 
 export const downloadCalendar = (events, teamName, filename) => {
-  const icsContent = generateICSContent(events)
+  const platform = filename.includes('ios') ? 'ios' : 'android'
+  const icsContent = generateICSContent(events, platform)
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
   const link = document.createElement('a')
   link.href = URL.createObjectURL(blob)
