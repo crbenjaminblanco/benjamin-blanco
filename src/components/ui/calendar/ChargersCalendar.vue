@@ -22,7 +22,7 @@ export default {
     return {
       baseEvents: [
         createEvent({
-          title: '🏈 Chargers vs Chiefs',
+          title: '🏈 Chiefs vs Chargers',
           description: 'NFL Week 1',
           month: 9,
           day: 5,
@@ -32,7 +32,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Raiders',
+          title: '🏈 Raiders vs Chargers',
           description: 'NFL Week 2',
           month: 9,
           day: 15,
@@ -52,7 +52,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Giants',
+          title: '🏈 Giants vs Chargers',
           description: 'NFL Week 4',
           month: 9,
           day: 28,
@@ -72,7 +72,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Dolphins',
+          title: '🏈 Dolphins vs Chargers',
           description: 'NFL Week 6',
           month: 10,
           day: 12,
@@ -102,7 +102,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Titans',
+          title: '🏈 Titans vs Chargers',
           description: 'NFL Week 9',
           month: 11,
           day: 2,
@@ -122,7 +122,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Jaguars',
+          title: '🏈 Jaguars vs Chargers',
           description: 'NFL Week 11',
           month: 11,
           day: 16,
@@ -152,7 +152,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Chiefs',
+          title: '🏈 Chiefs vs Chargers',
           description: 'NFL Week 15',
           month: 12,
           day: 14,
@@ -162,7 +162,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Cowboys',
+          title: '🏈 Cowboys vs Chargers',
           description: 'NFL Week 16',
           month: 12,
           day: 21,
@@ -182,7 +182,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Broncos',
+          title: '🏈 Broncos vs Chargers',
           description: 'NFL Week 18',
           month: 1,
           day: 5,

@@ -32,7 +32,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Packers',
+          title: '🏈 Packers vs Commanders',
           description: 'NFL Week 2',
           month: 9,
           day: 11,
@@ -52,7 +52,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Falcons',
+          title: '🏈 Falcons vs Commanders',
           description: 'NFL Week 4',
           month: 9,
           day: 28,
@@ -62,7 +62,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Chargers',
+          title: '🏈 Chargers vs Commanders',
           description: 'NFL Week 5',
           month: 10,
           day: 5,
@@ -82,7 +82,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Cowboys',
+          title: '🏈 Cowboys vs Commanders',
           description: 'NFL Week 7',
           month: 10,
           day: 19,
@@ -92,7 +92,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Chiefs',
+          title: '🏈 Chiefs vs Commanders',
           description: 'NFL Week 8',
           month: 10,
           day: 27,
@@ -122,7 +122,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Dolphins',
+          title: '🏈 Dolphins vs Commanders',
           description: 'NFL Week 11',
           month: 11,
           day: 16,
@@ -142,7 +142,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Vikings',
+          title: '🏈 Vikings vs Commanders',
           description: 'NFL Week 14',
           month: 12,
           day: 7,
@@ -152,7 +152,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Giants',
+          title: '🏈 Giants vs Commanders',
           description: 'NFL Week 15',
           month: 12,
           day: 14,
@@ -182,7 +182,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Eagles',
+          title: '🏈 Eagles vs Commanders',
           description: 'NFL Week 18',
           month: 1,
           day: 4,
