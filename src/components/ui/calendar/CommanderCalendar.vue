@@ -22,17 +22,17 @@ export default {
     return {
       baseEvents: [
         createEvent({
-          title: '🏈 Commanders vs Giants',
+          title: '🏈 Giants @ Commanders',
           description: 'NFL Week 1',
           month: 9,
           day: 7,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Packers vs Commanders',
+          title: '🏈 Commanders @ Packers',
           description: 'NFL Week 2',
           month: 9,
           day: 11,
@@ -42,17 +42,17 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Raiders',
+          title: '🏈 Raiders @ Commanders',
           description: 'NFL Week 3',
           month: 9,
           day: 21,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Falcons vs Commanders',
+          title: '🏈 Commanders @ Falcons',
           description: 'NFL Week 4',
           month: 9,
           day: 28,
@@ -62,7 +62,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chargers vs Commanders',
+          title: '🏈 Commanders @ Chargers',
           description: 'NFL Week 5',
           month: 10,
           day: 5,
@@ -72,17 +72,17 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Bears',
+          title: '🏈 Bears @ Commanders',
           description: 'NFL Week 6',
           month: 10,
           day: 13,
           hour: 20,
           minute: 15,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Cowboys vs Commanders',
+          title: '🏈 Commanders @ Cowboys',
           description: 'NFL Week 7',
           month: 10,
           day: 19,
@@ -92,7 +92,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Chiefs vs Commanders',
+          title: '🏈 Commanders @ Chiefs',
           description: 'NFL Week 8',
           month: 10,
           day: 27,
@@ -102,27 +102,27 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Seahawks',
+          title: '🏈 Seahawks @ Commanders',
           description: 'NFL Week 9',
           month: 11,
           day: 2,
           hour: 20,
           minute: 20,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Lions',
+          title: '🏈 Lions @ Commanders',
           description: 'NFL Week 10',
           month: 11,
           day: 9,
           hour: 16,
           minute: 25,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Dolphins vs Commanders',
+          title: '🏈 Commanders @ Dolphins',
           description: 'NFL Week 11',
           month: 11,
           day: 16,
@@ -132,17 +132,17 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Broncos',
+          title: '🏈 Broncos @ Commanders',
           description: 'NFL Week 13',
           month: 11,
           day: 30,
           hour: 20,
           minute: 20,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Vikings vs Commanders',
+          title: '🏈 Commanders @ Vikings',
           description: 'NFL Week 14',
           month: 12,
           day: 7,
@@ -152,7 +152,7 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Giants vs Commanders',
+          title: '🏈 Commanders @ Giants',
           description: 'NFL Week 15',
           month: 12,
           day: 14,
@@ -162,27 +162,27 @@ export default {
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Eagles',
+          title: '🏈 Eagles @ Commanders',
           description: 'NFL Week 16',
           month: 12,
           day: 20,
           hour: 'TBD',
           minute: 0,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Commanders vs Cowboys',
+          title: '🏈 Cowboys @ Commanders',
           description: 'NFL Week 17',
           month: 12,
           day: 25,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium',
+          location: 'FedEx Field',
           year: 2025
         }),
         createEvent({
-          title: '🏈 Eagles vs Commanders',
+          title: '🏈 Commanders @ Eagles',
           description: 'NFL Week 18',
           month: 1,
           day: 4,
