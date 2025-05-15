@@ -24,7 +24,7 @@ export const convertToUserTimezone = (date, hour, minute) => {
   }
 }
 
-export const generateICSContent = (events, teamName) => {
+export const generateICSContent = (events) => {
   const now = new Date()
   const year = now.getFullYear()
   
@@ -34,9 +34,10 @@ export const generateICSContent = (events, teamName) => {
     'PRODID:-//Benjamin Blanco//NFL Calendar//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
-    'X-WR-CALNAME:' + teamName + ' Schedule',
+    'X-WR-CALNAME:NFL',
     'X-WR-TIMEZONE:UTC',
-    'X-WR-CATEGORIES:NFL'
+    'X-APPLE-CALENDAR-COLOR:#FF0000',
+    'X-APPLE-CALENDAR-COLOR-NAME:NFL'
   ]
 
   events.forEach(event => {
@@ -60,7 +61,6 @@ export const generateICSContent = (events, teamName) => {
       'SUMMARY:' + event.title,
       'DESCRIPTION:' + event.description,
       'LOCATION:' + event.location,
-      'CATEGORIES:NFL',
       'END:VEVENT'
     ])
   })
@@ -70,11 +70,11 @@ export const generateICSContent = (events, teamName) => {
 }
 
 export const downloadCalendar = (events, teamName, filename) => {
-  const icsContent = generateICSContent(events, teamName)
+  const icsContent = generateICSContent(events)
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
   const link = document.createElement('a')
   link.href = URL.createObjectURL(blob)
-  link.download = filename || `${teamName.toLowerCase()}-schedule.ics`
+  link.download = filename
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
