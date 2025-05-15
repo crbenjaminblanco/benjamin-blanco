@@ -33,8 +33,8 @@ export default {
         {
           title: '🏈 Commanders vs Giants',
           description: 'NFL Week 1',
-          start: '20250907T130000',
-          end: '20250907T170000',
+          start: '20250907T110000',
+          end: '20250907T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -48,8 +48,8 @@ export default {
         {
           title: '🏈 Commanders vs Packers',
           description: 'NFL Week 2',
-          start: '20250911T201500',
-          end: '20250911T241500',
+          start: '20250915T110000',
+          end: '20250915T150000',
           location: 'Lambeau Field',
           geo: { lat: 44.5013, lon: -88.0622 },
           address: {
@@ -63,8 +63,8 @@ export default {
         {
           title: '🏈 Commanders vs Raiders',
           description: 'NFL Week 3',
-          start: '20250921T130000',
-          end: '20250921T170000',
+          start: '20250921T110000',
+          end: '20250921T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -78,8 +78,8 @@ export default {
         {
           title: '🏈 Commanders vs Falcons',
           description: 'NFL Week 4',
-          start: '20250928T130000',
-          end: '20250928T170000',
+          start: '20250928T110000',
+          end: '20250928T150000',
           location: 'Mercedes-Benz Stadium',
           geo: { lat: 33.7550, lon: -84.4006 },
           address: {
@@ -93,8 +93,8 @@ export default {
         {
           title: '🏈 Commanders vs Chargers',
           description: 'NFL Week 5',
-          start: '20251005T162500',
-          end: '20251005T202500',
+          start: '20251005T142500',
+          end: '20251005T182500',
           location: 'SoFi Stadium',
           geo: { lat: 33.9535, lon: -118.3387 },
           address: {
@@ -108,8 +108,8 @@ export default {
         {
           title: '🏈 Commanders vs Bears',
           description: 'NFL Week 6',
-          start: '20251013T201500',
-          end: '20251013T241500',
+          start: '20251013T110000',
+          end: '20251013T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -123,8 +123,8 @@ export default {
         {
           title: '🏈 Commanders vs Cowboys',
           description: 'NFL Week 7',
-          start: '20251019T162500',
-          end: '20251019T202500',
+          start: '20251019T142500',
+          end: '20251019T182500',
           location: 'AT&T Stadium',
           geo: { lat: 32.7478, lon: -97.0928 },
           address: {
@@ -138,8 +138,8 @@ export default {
         {
           title: '🏈 Commanders vs Chiefs',
           description: 'NFL Week 8',
-          start: '20251027T201500',
-          end: '20251027T241500',
+          start: '20251027T181500',
+          end: '20251027T221500',
           location: 'Arrowhead Stadium',
           geo: { lat: 39.0489, lon: -94.4839 },
           address: {
@@ -153,8 +153,8 @@ export default {
         {
           title: '🏈 Commanders vs Seahawks',
           description: 'NFL Week 9',
-          start: '20251102T202000',
-          end: '20251102T242000',
+          start: '20251102T110000',
+          end: '20251102T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -168,8 +168,8 @@ export default {
         {
           title: '🏈 Commanders vs Lions',
           description: 'NFL Week 10',
-          start: '20251109T162500',
-          end: '20251109T202500',
+          start: '20251109T110000',
+          end: '20251109T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -183,8 +183,8 @@ export default {
         {
           title: '🏈 Commanders vs Dolphins',
           description: 'NFL Week 11',
-          start: '20251116T093000',
-          end: '20251116T133000',
+          start: '20251116T073000',
+          end: '20251116T113000',
           location: 'Hard Rock Stadium',
           geo: { lat: 25.9580, lon: -80.2389 },
           address: {
@@ -198,8 +198,8 @@ export default {
         {
           title: '🏈 Commanders vs Broncos',
           description: 'NFL Week 13',
-          start: '20251130T202000',
-          end: '20251130T242000',
+          start: '20251130T110000',
+          end: '20251130T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -213,8 +213,8 @@ export default {
         {
           title: '🏈 Commanders vs Vikings',
           description: 'NFL Week 14',
-          start: '20251207T130000',
-          end: '20251207T170000',
+          start: '20251207T110000',
+          end: '20251207T150000',
           location: 'U.S. Bank Stadium',
           geo: { lat: 44.9739, lon: -93.2581 },
           address: {
@@ -228,8 +228,8 @@ export default {
         {
           title: '🏈 Commanders vs Giants',
           description: 'NFL Week 15',
-          start: '20251214T130000',
-          end: '20251214T170000',
+          start: '20251214T110000',
+          end: '20251214T150000',
           location: 'MetLife Stadium',
           geo: { lat: 40.8135, lon: -74.0744 },
           address: {
@@ -243,8 +243,8 @@ export default {
         {
           title: '🏈 Commanders vs Eagles',
           description: 'NFL Week 16',
-          start: '20251220T130000',
-          end: '20251220T170000',
+          start: '20251220T110000',
+          end: '20251220T150000',
           location: 'Northwest Stadium',
           geo: { lat: 38.9078, lon: -76.8644 },
           address: {
@@ -253,36 +253,6 @@ export default {
             state: 'MD',
             country: 'USA',
             postalCode: '20785'
-          }
-        },
-        {
-          title: '🏈 Commanders vs Cowboys',
-          description: 'NFL Week 17',
-          start: '20251225T130000',
-          end: '20251225T170000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
-          title: '🏈 Commanders vs Eagles',
-          description: 'NFL Week 18',
-          start: '20260104T130000',
-          end: '20260104T170000',
-          location: 'Lincoln Financial Field',
-          geo: { lat: 39.9008, lon: -75.1675 },
-          address: {
-            street: '1 Lincoln Financial Field Way',
-            city: 'Philadelphia',
-            state: 'PA',
-            country: 'USA',
-            postalCode: '19148'
           }
         }
       ]
@@ -345,6 +315,28 @@ export default {
       const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
       const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
       
+      // Función para convertir la hora a la zona horaria del usuario
+      const convertToUserTimezone = (dateStr) => {
+        // Extraer año, mes, día, hora y minutos del string de fecha
+        const year = dateStr.substring(0, 4)
+        const month = dateStr.substring(4, 6)
+        const day = dateStr.substring(6, 8)
+        const hour = dateStr.substring(9, 11)
+        const minute = dateStr.substring(11, 13)
+        
+        // Crear fecha en UTC
+        const date = new Date(Date.UTC(year, month - 1, day, hour, minute))
+        
+        // Convertir a la zona horaria del usuario
+        const userDate = new Date(date.toLocaleString('en-US', { timeZone: userTimezone }))
+        
+        // Formatear la fecha para ICS
+        return userDate.toISOString()
+          .replace(/[-:]/g, '')
+          .replace(/\.\d{3}/g, '')
+          .replace('Z', '')
+      }
+      
       let icsContent = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
@@ -374,11 +366,15 @@ export default {
           event.address.country
         ].filter(Boolean).join(', ')
 
+        // Convertir las horas de inicio y fin a la zona horaria del usuario
+        const startTime = convertToUserTimezone(event.start)
+        const endTime = convertToUserTimezone(event.end)
+
         icsContent = icsContent.concat([
           'BEGIN:VEVENT',
           `DTSTAMP:${now}`,
-          `DTSTART;TZID=${userTimezone}:${event.start}`,
-          `DTEND;TZID=${userTimezone}:${event.end}`,
+          `DTSTART;TZID=${userTimezone}:${startTime}`,
+          `DTEND;TZID=${userTimezone}:${endTime}`,
           `SUMMARY:${event.title}`,
           `DESCRIPTION:${event.description}`,
           `LOCATION:${formattedAddress}`,

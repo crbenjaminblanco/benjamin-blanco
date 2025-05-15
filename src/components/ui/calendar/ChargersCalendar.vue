@@ -37,7 +37,8 @@ export default {
           day: 5,
           hour: 17,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'Arena Corinthians'
         },
         {
           title: '🏈 Chargers vs Raiders',
@@ -46,7 +47,8 @@ export default {
           day: 15,
           hour: 19,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'Allegiant Stadium'
         },
         {
           title: '🏈 Chargers vs Broncos',
@@ -55,7 +57,8 @@ export default {
           day: 21,
           hour: 13,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Giants',
@@ -64,7 +67,8 @@ export default {
           day: 28,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'MetLife Stadium'
         },
         {
           title: '🏈 Chargers vs Commanders',
@@ -73,7 +77,8 @@ export default {
           day: 5,
           hour: 13,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Dolphins',
@@ -82,7 +87,8 @@ export default {
           day: 12,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'Hard Rock Stadium'
         },
         {
           title: '🏈 Chargers vs Colts',
@@ -91,7 +97,8 @@ export default {
           day: 19,
           hour: 13,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Vikings',
@@ -100,7 +107,8 @@ export default {
           day: 23,
           hour: 17,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Titans',
@@ -109,7 +117,8 @@ export default {
           day: 2,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'Nissan Stadium'
         },
         {
           title: '🏈 Chargers vs Steelers',
@@ -118,7 +127,8 @@ export default {
           day: 9,
           hour: 17,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Jaguars',
@@ -127,7 +137,8 @@ export default {
           day: 16,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'EverBank Stadium'
         },
         {
           title: '🏈 Chargers vs Raiders',
@@ -136,7 +147,8 @@ export default {
           day: 30,
           hour: 13,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Eagles',
@@ -145,7 +157,8 @@ export default {
           day: 8,
           hour: 17,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Chiefs',
@@ -154,7 +167,8 @@ export default {
           day: 14,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'GEHA Field at Arrowhead Stadium'
         },
         {
           title: '🏈 Chargers vs Cowboys',
@@ -163,7 +177,8 @@ export default {
           day: 21,
           hour: 10,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'AT&T Stadium'
         },
         {
           title: '🏈 Chargers vs Texans',
@@ -172,7 +187,8 @@ export default {
           day: 28,
           hour: 13,
           duration: 3,
-          isHome: true
+          isHome: true,
+          location: 'SoFi Stadium'
         },
         {
           title: '🏈 Chargers vs Broncos',
@@ -181,7 +197,9 @@ export default {
           day: 4,
           hour: 13,
           duration: 3,
-          isHome: false
+          isHome: false,
+          location: 'Empower Field at Mile High',
+          year: 2026
         }
       ]
     }
