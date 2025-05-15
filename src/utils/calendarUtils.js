@@ -66,12 +66,12 @@ export const generateICSContent = (events, teamName) => {
   return icsContent.join('\r\n')
 }
 
-export const downloadCalendar = (events, teamName) => {
+export const downloadCalendar = (events, teamName, filename) => {
   const icsContent = generateICSContent(events, teamName)
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
   const link = document.createElement('a')
   link.href = URL.createObjectURL(blob)
-  link.download = `${teamName.toLowerCase()}-schedule.ics`
+  link.download = filename || `${teamName.toLowerCase()}-schedule.ics`
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)

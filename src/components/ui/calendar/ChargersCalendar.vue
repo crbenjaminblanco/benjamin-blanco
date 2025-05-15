@@ -2,6 +2,8 @@
   <BaseCalendar 
     :base-events="baseEvents"
     team-name="Chargers"
+    :title="$t('calendar.chargersTitle')"
+    :description="$t('calendar.chargersDescription')"
   />
 </template>
 

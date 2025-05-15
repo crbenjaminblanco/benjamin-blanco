@@ -1,7 +1,7 @@
 <template>
   <div class="base-calendar" :key="componentKey">
-    <h2 class="base-calendar__title">{{ $t('calendar.title') }}</h2>
-    <p class="base-calendar__description">{{ $t('calendar.description') }}</p>
+    <h2 class="base-calendar__title">{{ title }}</h2>
+    <p class="base-calendar__description">{{ description }}</p>
     
     <div class="base-calendar__actions">
       <button 
@@ -36,6 +36,14 @@ export default {
     teamName: {
       type: String,
       required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
     }
   },
 
@@ -51,7 +59,11 @@ export default {
 
   methods: {
     downloadCalendar(platform) {
-      downloadCalendar(this.baseEvents, this.teamName, platform)
+      const filename = platform === 'ios' 
+        ? `${this.teamName.toLowerCase()}-schedule-ios.ics`
+        : `${this.teamName.toLowerCase()}-schedule-android.ics`
+      
+      downloadCalendar(this.baseEvents, this.teamName, filename)
     }
   }
 }
