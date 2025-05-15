@@ -1,71 +1,59 @@
 <template>
-  <div class="chargers-calendar">
-    <h2 class="chargers-calendar__title">{{ $t('calendar.chargersTitle') }}</h2>
-    <p class="chargers-calendar__description">{{ $t('calendar.chargersDescription') }}</p>
-    
-    <div class="chargers-calendar__actions">
-      <button 
-        class="btn btn-primary"
-        @click="downloadCalendar('ios')"
-      >
-        <i class="fab fa-apple me-2"></i>
-        {{ $t('calendar.downloadIOS') }}
-      </button>
-      <button 
-        class="btn btn-primary"
-        @click="downloadCalendar('android')"
-      >
-        <i class="fab fa-android me-2"></i>
-        {{ $t('calendar.downloadAndroid') }}
-      </button>
-    </div>
-  </div>
+  <BaseCalendar 
+    :base-events="baseEvents"
+    team-name="Chargers"
+  />
 </template>
 
 <script>
-import { downloadCalendar, createEvent } from '../../../utils/calendarUtils'
+import { createEvent } from '../../../utils/calendarUtils'
+import BaseCalendar from './BaseCalendar.vue'
 
 export default {
   name: 'ChargersCalendar',
   
+  components: {
+    BaseCalendar
+  },
+
   data() {
     return {
       baseEvents: [
         createEvent({
-          title: '🏈 Chargers vs Chiefs',
+          title: '🏈 Chargers vs Raiders',
           description: 'NFL Week 1',
           month: 9,
-          day: 5,
-          hour: 17,
-          minute: 0,
-          location: 'Arena Corinthians'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Raiders',
-          description: 'NFL Week 2',
-          month: 9,
-          day: 15,
-          hour: 19,
-          minute: 0,
-          location: 'Allegiant Stadium'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Broncos',
-          description: 'NFL Week 3',
-          month: 9,
-          day: 21,
+          day: 8,
           hour: 13,
-          minute: 5,
+          minute: 0,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Giants',
+          title: '🏈 Chargers vs Panthers',
+          description: 'NFL Week 2',
+          month: 9,
+          day: 15,
+          hour: 13,
+          minute: 0,
+          location: 'SoFi Stadium'
+        }),
+        createEvent({
+          title: '🏈 Chargers vs Steelers',
+          description: 'NFL Week 3',
+          month: 9,
+          day: 22,
+          hour: 13,
+          minute: 0,
+          location: 'SoFi Stadium'
+        }),
+        createEvent({
+          title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 4',
           month: 9,
-          day: 28,
-          hour: 10,
+          day: 29,
+          hour: 13,
           minute: 0,
-          location: 'MetLife Stadium'
+          location: 'Arrowhead Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Commanders',
@@ -77,58 +65,67 @@ export default {
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Dolphins',
+          title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 6',
           month: 10,
-          day: 12,
-          hour: 10,
+          day: 13,
+          hour: 13,
           minute: 0,
-          location: 'Hard Rock Stadium'
+          location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Colts',
+          title: '🏈 Chargers vs Cardinals',
           description: 'NFL Week 7',
           month: 10,
-          day: 19,
+          day: 20,
           hour: 13,
-          minute: 5,
+          minute: 0,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Vikings',
+          title: '🏈 Chargers vs Ravens',
           description: 'NFL Week 8',
           month: 10,
-          day: 23,
-          hour: 17,
-          minute: 15,
-          location: 'SoFi Stadium'
+          day: 27,
+          hour: 13,
+          minute: 0,
+          location: 'M&T Bank Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Titans',
+          title: '🏈 Chargers vs Browns',
           description: 'NFL Week 9',
           month: 11,
-          day: 2,
-          hour: 10,
+          day: 3,
+          hour: 13,
           minute: 0,
-          location: 'Nissan Stadium'
+          location: 'Cleveland Browns Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Steelers',
+          title: '🏈 Chargers vs Lions',
           description: 'NFL Week 10',
           month: 11,
-          day: 9,
-          hour: 17,
-          minute: 20,
+          day: 10,
+          hour: 13,
+          minute: 0,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Jaguars',
+          title: '🏈 Chargers vs Packers',
           description: 'NFL Week 11',
           month: 11,
-          day: 16,
-          hour: 10,
+          day: 17,
+          hour: 13,
           minute: 0,
-          location: 'EverBank Stadium'
+          location: 'Lambeau Field'
+        }),
+        createEvent({
+          title: '🏈 Chargers vs Bills',
+          description: 'NFL Week 12',
+          month: 11,
+          day: 24,
+          hour: 13,
+          minute: 0,
+          location: 'Highmark Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Raiders',
@@ -137,155 +134,54 @@ export default {
           day: 30,
           hour: 13,
           minute: 25,
-          location: 'SoFi Stadium'
+          location: 'Allegiant Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Eagles',
+          title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 14',
           month: 12,
           day: 8,
-          hour: 17,
-          minute: 15,
+          hour: 13,
+          minute: 0,
           location: 'SoFi Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 15',
           month: 12,
-          day: 14,
-          hour: 10,
-          minute: 0,
-          location: 'Arrowhead Stadium'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Cowboys',
-          description: 'NFL Week 16',
-          month: 12,
-          day: 21,
-          hour: 10,
-          minute: 0,
-          location: 'AT&T Stadium'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Texans',
-          description: 'NFL Week 17',
-          month: 12,
-          day: 28,
+          day: 15,
           hour: 13,
-          minute: 25,
+          minute: 0,
           location: 'SoFi Stadium'
         }),
         createEvent({
+          title: '🏈 Chargers vs Bengals',
+          description: 'NFL Week 16',
+          month: 12,
+          day: 22,
+          hour: 13,
+          minute: 0,
+          location: 'Paycor Stadium'
+        }),
+        createEvent({
           title: '🏈 Chargers vs Broncos',
-          description: 'NFL Week 18',
-          month: 1,
-          day: 4,
+          description: 'NFL Week 17',
+          month: 12,
+          day: 29,
           hour: 13,
           minute: 25,
-          location: 'Empower Field at Mile High',
-          year: 2026
+          location: 'Empower Field at Mile High'
+        }),
+        createEvent({
+          title: '🏈 Chargers vs Raiders',
+          description: 'NFL Week 18',
+          month: 1,
+          day: 5,
+          hour: 13,
+          minute: 25,
+          location: 'SoFi Stadium'
         })
       ]
-    }
-  },
-
-  methods: {
-    downloadCalendar(platform) {
-      downloadCalendar(this.baseEvents, 'Chargers', platform)
-    },
-
-    formatDateForICS(date) {
-      return `${date.year}${String(date.month).padStart(2, '0')}${String(date.day).padStart(2, '0')}T${String(date.hour).padStart(2, '0')}${String(date.minute).padStart(2, '0')}00`
-    },
-
-    getStadiumLocation(opponent, isHome) {
-      if (isHome) {
-        return 'SoFi Stadium, 1001 Stadium Dr, Inglewood, CA 90301'
-      }
-      
-      // Mapa de estadios visitantes
-      const awayStadiums = {
-        'Raiders': 'Allegiant Stadium, 3333 Al Davis Way, Las Vegas, NV 89118',
-        'Chiefs': 'Arrowhead Stadium, 1 Arrowhead Dr, Kansas City, MO 64129',
-        'Broncos': 'Empower Field at Mile High, 1701 Bryant St, Denver, CO 80204',
-        'Ravens': 'M&T Bank Stadium, 1101 Russell St, Baltimore, MD 21230',
-        'Browns': 'Cleveland Browns Stadium, 100 Alfred Lerner Way, Cleveland, OH 44114',
-        'Steelers': 'Acrisure Stadium, 100 Art Rooney Ave, Pittsburgh, PA 15212',
-        'Titans': 'Nissan Stadium, 1 Titans Way, Nashville, TN 37213',
-        'Colts': 'Lucas Oil Stadium, 500 S Capitol Ave, Indianapolis, IN 46225',
-        'Jets': 'MetLife Stadium, 1 MetLife Stadium Dr, East Rutherford, NJ 07073',
-        'Bills': 'Highmark Stadium, 1 Bills Dr, Orchard Park, NY 14127',
-        'Dolphins': 'Hard Rock Stadium, 347 Don Shula Dr, Miami Gardens, FL 33056',
-        'Patriots': 'Gillette Stadium, 1 Patriot Pl, Foxborough, MA 02035',
-        'Bengals': 'Paycor Stadium, 1 Paycor Stadium, Cincinnati, OH 45202',
-        'Jaguars': 'EverBank Stadium, 1 TIAA Bank Field Dr, Jacksonville, FL 32202',
-        'Texans': 'NRG Stadium, NRG Pkwy, Houston, TX 77054'
-      }
-      
-      return awayStadiums[opponent] || 'TBD'
-    },
-
-    generateICSContent() {
-      const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
-      const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-      
-      // Función para convertir la hora a la zona horaria del usuario
-      const convertToUserTimezone = (event) => {
-        const year = event.year || 2025
-        const date = new Date(Date.UTC(year, event.month - 1, event.day, event.hour, event.minute || 0))
-        const userDate = new Date(date.toLocaleString('en-US', { timeZone: userTimezone }))
-        return userDate.toISOString()
-          .replace(/[-:]/g, '')
-          .replace(/\.\d{3}/g, '')
-          .replace('Z', '')
-      }
-      
-      let icsContent = [
-        'BEGIN:VCALENDAR',
-        'VERSION:2.0',
-        'PRODID:-//Chargers Games 2025//EN',
-        'CALSCALE:GREGORIAN',
-        'METHOD:PUBLISH',
-        'X-WR-CALNAME:Chargers Games 2025',
-        `X-WR-TIMEZONE:${userTimezone}`,
-        'BEGIN:VTIMEZONE',
-        `TZID:${userTimezone}`,
-        `X-LIC-LOCATION:${userTimezone}`,
-        'BEGIN:STANDARD',
-        'TZOFFSETFROM:-0600',
-        'TZOFFSETTO:-0600',
-        'TZNAME:CST',
-        'DTSTART:19700101T000000',
-        'END:STANDARD',
-        'END:VTIMEZONE'
-      ]
-
-      this.baseEvents.forEach(event => {
-        const startTime = convertToUserTimezone(event)
-        const endTime = convertToUserTimezone({
-          ...event,
-          hour: event.hour + event.duration
-        })
-
-        icsContent = icsContent.concat([
-          'BEGIN:VEVENT',
-          `DTSTAMP:${now}`,
-          `DTSTART;TZID=${userTimezone}:${startTime}`,
-          `DTEND;TZID=${userTimezone}:${endTime}`,
-          `SUMMARY:${event.title}`,
-          `DESCRIPTION:${event.description}`,
-          `LOCATION:${event.location}`,
-          'STATUS:CONFIRMED',
-          'SEQUENCE:0',
-          'TRANSP:OPAQUE',
-          'ORGANIZER;CN=Benjamin Blanco Calendars:mailto:contact@nidodelparque.com',
-          'URL:https://nidodelparque.com',
-          'END:VEVENT'
-        ])
-      })
-
-      icsContent.push('END:VCALENDAR')
-      return icsContent.join('\r\n')
     }
   }
 }
