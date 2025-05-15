@@ -258,6 +258,17 @@ export default {
       const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
       const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
       
+      // Función para convertir la hora a la zona horaria del usuario
+      const convertToUserTimezone = (event) => {
+        const year = event.year || 2025
+        const date = new Date(Date.UTC(year, event.month - 1, event.day, event.hour, 0))
+        const userDate = new Date(date.toLocaleString('en-US', { timeZone: userTimezone }))
+        return userDate.toISOString()
+          .replace(/[-:]/g, '')
+          .replace(/\.\d{3}/g, '')
+          .replace('Z', '')
+      }
+      
       let icsContent = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
@@ -279,27 +290,11 @@ export default {
       ]
 
       this.baseEvents.forEach(event => {
-        const startDate = {
-          year: 2025,
-          month: event.month,
-          day: event.day,
-          hour: event.hour,
-          minute: 0
-        }
-        const startTime = this.formatDateForICS(startDate)
-        
-        const endDate = {
-          year: 2025,
-          month: event.month,
-          day: event.day,
-          hour: event.hour + event.duration,
-          minute: 0
-        }
-        const endTime = this.formatDateForICS(endDate)
-
-        // Extraer el oponente del título del evento
-        const opponent = event.description.split('vs ')[1]
-        const location = this.getStadiumLocation(opponent, event.isHome)
+        const startTime = convertToUserTimezone(event)
+        const endTime = convertToUserTimezone({
+          ...event,
+          hour: event.hour + event.duration
+        })
 
         icsContent = icsContent.concat([
           'BEGIN:VEVENT',
@@ -308,10 +303,12 @@ export default {
           `DTEND;TZID=${userTimezone}:${endTime}`,
           `SUMMARY:${event.title}`,
           `DESCRIPTION:${event.description}`,
-          `LOCATION:${location}`,
+          `LOCATION:${event.location}`,
           'STATUS:CONFIRMED',
           'SEQUENCE:0',
           'TRANSP:OPAQUE',
+          'ORGANIZER;CN=Benjamin Blanco Calendars:mailto:contact@nidodelparque.com',
+          'URL:https://nidodelparque.com',
           'END:VEVENT'
         ])
       })
