@@ -45,19 +45,13 @@ export default {
     }
   },
 
-  computed: {
-    filteredEvents() {
-      return this.baseEvents.filter(event => event.hour !== 'TBD')
-    }
-  },
-
   created() {
     this.componentKey++
   },
 
   methods: {
     downloadCalendar(platform) {
-      downloadCalendar(this.filteredEvents, this.teamName, platform)
+      downloadCalendar(this.baseEvents, this.teamName, platform)
     }
   }
 }
