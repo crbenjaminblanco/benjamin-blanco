@@ -23,204 +23,175 @@
 </template>
 
 <script>
+import { downloadCalendar, createEvent } from '../../../utils/calendarUtils'
+
 export default {
   name: 'ChargersCalendar',
   
   data() {
     return {
-      // Base events in local time
       baseEvents: [
-        {
+        createEvent({
           title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 1',
           month: 9,
           day: 5,
           hour: 17,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'Arena Corinthians'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Raiders',
           description: 'NFL Week 2',
           month: 9,
           day: 15,
           hour: 19,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'Allegiant Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 3',
           month: 9,
           day: 21,
           hour: 13,
-          duration: 3,
-          isHome: true,
+          minute: 5,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Giants',
           description: 'NFL Week 4',
           month: 9,
           day: 28,
           hour: 10,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'MetLife Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Commanders',
           description: 'NFL Week 5',
           month: 10,
           day: 5,
           hour: 13,
-          duration: 3,
-          isHome: true,
+          minute: 25,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Dolphins',
           description: 'NFL Week 6',
           month: 10,
           day: 12,
           hour: 10,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'Hard Rock Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Colts',
           description: 'NFL Week 7',
           month: 10,
           day: 19,
           hour: 13,
-          duration: 3,
-          isHome: true,
+          minute: 5,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Vikings',
           description: 'NFL Week 8',
           month: 10,
           day: 23,
           hour: 17,
-          duration: 3,
-          isHome: true,
+          minute: 15,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Titans',
           description: 'NFL Week 9',
           month: 11,
           day: 2,
           hour: 10,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'Nissan Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Steelers',
           description: 'NFL Week 10',
           month: 11,
           day: 9,
           hour: 17,
-          duration: 3,
-          isHome: true,
+          minute: 20,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Jaguars',
           description: 'NFL Week 11',
           month: 11,
           day: 16,
           hour: 10,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'EverBank Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Raiders',
           description: 'NFL Week 13',
           month: 11,
           day: 30,
           hour: 13,
-          duration: 3,
-          isHome: true,
+          minute: 25,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Eagles',
           description: 'NFL Week 14',
           month: 12,
           day: 8,
           hour: 17,
-          duration: 3,
-          isHome: true,
+          minute: 15,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 15',
           month: 12,
           day: 14,
           hour: 10,
-          duration: 3,
-          isHome: false,
-          location: 'GEHA Field at Arrowhead Stadium'
-        },
-        {
+          minute: 0,
+          location: 'Arrowhead Stadium'
+        }),
+        createEvent({
           title: '🏈 Chargers vs Cowboys',
           description: 'NFL Week 16',
           month: 12,
           day: 21,
           hour: 10,
-          duration: 3,
-          isHome: false,
+          minute: 0,
           location: 'AT&T Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Texans',
           description: 'NFL Week 17',
           month: 12,
           day: 28,
           hour: 13,
-          duration: 3,
-          isHome: true,
+          minute: 25,
           location: 'SoFi Stadium'
-        },
-        {
+        }),
+        createEvent({
           title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 18',
           month: 1,
           day: 4,
           hour: 13,
-          duration: 3,
-          isHome: false,
+          minute: 25,
           location: 'Empower Field at Mile High',
           year: 2026
-        }
+        })
       ]
     }
   },
 
   methods: {
     downloadCalendar(platform) {
-      const icsContent = this.generateICSContent()
-      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
-      const link = document.createElement('a')
-      link.href = URL.createObjectURL(blob)
-      
-      // Ajustar el nombre del archivo según la plataforma
-      const filename = platform === 'ios' 
-        ? 'chargers-games-2025.ics'
-        : 'chargers-games-2025.ical'
-      
-      link.download = filename
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
+      downloadCalendar(this.baseEvents, 'Chargers', platform)
     },
 
     formatDateForICS(date) {
@@ -261,7 +232,7 @@ export default {
       // Función para convertir la hora a la zona horaria del usuario
       const convertToUserTimezone = (event) => {
         const year = event.year || 2025
-        const date = new Date(Date.UTC(year, event.month - 1, event.day, event.hour, 0))
+        const date = new Date(Date.UTC(year, event.month - 1, event.day, event.hour, event.minute || 0))
         const userDate = new Date(date.toLocaleString('en-US', { timeZone: userTimezone }))
         return userDate.toISOString()
           .replace(/[-:]/g, '')

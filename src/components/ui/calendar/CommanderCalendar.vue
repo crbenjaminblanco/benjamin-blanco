@@ -23,263 +23,161 @@
 </template>
 
 <script>
+import { downloadCalendar, createEvent } from '../../../utils/calendarUtils'
+
 export default {
   name: 'CommanderCalendar',
   
   data() {
     return {
       componentKey: 0,
-      events: [
-        {
+      baseEvents: [
+        createEvent({
           title: '🏈 Commanders vs Giants',
           description: 'NFL Week 1',
-          start: '20250907T110000',
-          end: '20250907T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 9,
+          day: 7,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Packers',
           description: 'NFL Week 2',
-          start: '20250915T110000',
-          end: '20250915T150000',
-          location: 'Lambeau Field',
-          geo: { lat: 44.5013, lon: -88.0622 },
-          address: {
-            street: '1265 Lombardi Ave',
-            city: 'Green Bay',
-            state: 'WI',
-            country: 'USA',
-            postalCode: '54304'
-          }
-        },
-        {
+          month: 9,
+          day: 15,
+          hour: 11,
+          minute: 0,
+          location: 'Lambeau Field'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Raiders',
           description: 'NFL Week 3',
-          start: '20250921T110000',
-          end: '20250921T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 9,
+          day: 21,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Falcons',
           description: 'NFL Week 4',
-          start: '20250928T110000',
-          end: '20250928T150000',
-          location: 'Mercedes-Benz Stadium',
-          geo: { lat: 33.7550, lon: -84.4006 },
-          address: {
-            street: '1 AMB Drive NW',
-            city: 'Atlanta',
-            state: 'GA',
-            country: 'USA',
-            postalCode: '30313'
-          }
-        },
-        {
+          month: 9,
+          day: 28,
+          hour: 11,
+          minute: 0,
+          location: 'Mercedes-Benz Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Chargers',
           description: 'NFL Week 5',
-          start: '20251005T142500',
-          end: '20251005T182500',
-          location: 'SoFi Stadium',
-          geo: { lat: 33.9535, lon: -118.3387 },
-          address: {
-            street: '1001 Stadium Dr',
-            city: 'Inglewood',
-            state: 'CA',
-            country: 'USA',
-            postalCode: '90301'
-          }
-        },
-        {
+          month: 10,
+          day: 5,
+          hour: 14,
+          minute: 25,
+          location: 'SoFi Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Bears',
           description: 'NFL Week 6',
-          start: '20251013T110000',
-          end: '20251013T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 10,
+          day: 13,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Cowboys',
           description: 'NFL Week 7',
-          start: '20251019T142500',
-          end: '20251019T182500',
-          location: 'AT&T Stadium',
-          geo: { lat: 32.7478, lon: -97.0928 },
-          address: {
-            street: '1 AT&T Way',
-            city: 'Arlington',
-            state: 'TX',
-            country: 'USA',
-            postalCode: '76011'
-          }
-        },
-        {
+          month: 10,
+          day: 19,
+          hour: 14,
+          minute: 25,
+          location: 'AT&T Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Chiefs',
           description: 'NFL Week 8',
-          start: '20251027T181500',
-          end: '20251027T221500',
-          location: 'Arrowhead Stadium',
-          geo: { lat: 39.0489, lon: -94.4839 },
-          address: {
-            street: '1 Arrowhead Dr',
-            city: 'Kansas City',
-            state: 'MO',
-            country: 'USA',
-            postalCode: '64129'
-          }
-        },
-        {
+          month: 10,
+          day: 27,
+          hour: 18,
+          minute: 15,
+          location: 'Arrowhead Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Seahawks',
           description: 'NFL Week 9',
-          start: '20251102T110000',
-          end: '20251102T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 11,
+          day: 2,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Lions',
           description: 'NFL Week 10',
-          start: '20251109T110000',
-          end: '20251109T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 11,
+          day: 9,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Dolphins',
           description: 'NFL Week 11',
-          start: '20251116T073000',
-          end: '20251116T113000',
-          location: 'Hard Rock Stadium',
-          geo: { lat: 25.9580, lon: -80.2389 },
-          address: {
-            street: '347 Don Shula Dr',
-            city: 'Miami Gardens',
-            state: 'FL',
-            country: 'USA',
-            postalCode: '33056'
-          }
-        },
-        {
+          month: 11,
+          day: 16,
+          hour: 7,
+          minute: 30,
+          location: 'Hard Rock Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Broncos',
           description: 'NFL Week 13',
-          start: '20251130T110000',
-          end: '20251130T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        },
-        {
+          month: 11,
+          day: 30,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Vikings',
           description: 'NFL Week 14',
-          start: '20251207T110000',
-          end: '20251207T150000',
-          location: 'U.S. Bank Stadium',
-          geo: { lat: 44.9739, lon: -93.2581 },
-          address: {
-            street: '401 Chicago Ave',
-            city: 'Minneapolis',
-            state: 'MN',
-            country: 'USA',
-            postalCode: '55415'
-          }
-        },
-        {
+          month: 12,
+          day: 7,
+          hour: 11,
+          minute: 0,
+          location: 'U.S. Bank Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Giants',
           description: 'NFL Week 15',
-          start: '20251214T110000',
-          end: '20251214T150000',
-          location: 'MetLife Stadium',
-          geo: { lat: 40.8135, lon: -74.0744 },
-          address: {
-            street: '1 MetLife Stadium Dr',
-            city: 'East Rutherford',
-            state: 'NJ',
-            country: 'USA',
-            postalCode: '07073'
-          }
-        },
-        {
+          month: 12,
+          day: 14,
+          hour: 11,
+          minute: 0,
+          location: 'MetLife Stadium'
+        }),
+        createEvent({
           title: '🏈 Commanders vs Eagles',
           description: 'NFL Week 16',
-          start: '20251220T110000',
-          end: '20251220T150000',
-          location: 'Northwest Stadium',
-          geo: { lat: 38.9078, lon: -76.8644 },
-          address: {
-            street: '1600 FedEx Way',
-            city: 'Landover',
-            state: 'MD',
-            country: 'USA',
-            postalCode: '20785'
-          }
-        }
+          month: 12,
+          day: 20,
+          hour: 11,
+          minute: 0,
+          location: 'Northwest Stadium'
+        })
       ]
     }
   },
 
   created() {
-    // Forzar recarga del componente
     this.componentKey++
   },
 
   methods: {
     downloadCalendar(platform) {
-      const icsContent = this.generateICSContent()
-      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
-      const link = document.createElement('a')
-      link.href = URL.createObjectURL(blob)
-      
-      // Ajustar el nombre del archivo según la plataforma
-      const filename = platform === 'ios' 
-        ? 'commanders-games-2025.ics'
-        : 'commanders-games-2025.ical'
-      
-      link.download = filename
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
+      downloadCalendar(this.baseEvents, 'Commanders', platform)
     },
 
     getStadiumLocation(opponent, isHome) {
@@ -357,7 +255,7 @@ export default {
         'END:VTIMEZONE'
       ]
 
-      this.events.forEach(event => {
+      this.baseEvents.forEach(event => {
         const formattedAddress = [
           event.address.street,
           event.address.city,
