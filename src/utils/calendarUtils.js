@@ -35,11 +35,13 @@ export const generateICSContent = (events, teamName) => {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'X-WR-CALNAME:' + teamName + ' Schedule',
-    'X-WR-TIMEZONE:UTC'
+    'X-WR-TIMEZONE:UTC',
+    'X-WR-CATEGORIES:NFL'
   ]
 
   events.forEach(event => {
-    const eventDate = new Date(year, event.month - 1, event.day)
+    const eventYear = event.year || year
+    const eventDate = new Date(eventYear, event.month - 1, event.day)
     const { date, time } = convertToUserTimezone(eventDate, event.hour, event.minute)
     
     const startTime = time === 'TBD' ? 
@@ -58,6 +60,7 @@ export const generateICSContent = (events, teamName) => {
       'SUMMARY:' + event.title,
       'DESCRIPTION:' + event.description,
       'LOCATION:' + event.location,
+      'CATEGORIES:NFL',
       'END:VEVENT'
     ])
   })

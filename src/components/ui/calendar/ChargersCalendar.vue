@@ -28,7 +28,8 @@ export default {
           day: 5,
           hour: 17,
           minute: 0,
-          location: 'Arena Corinthians'
+          location: 'Arena Corinthians',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Raiders',
@@ -37,7 +38,8 @@ export default {
           day: 15,
           hour: 19,
           minute: 0,
-          location: 'Allegiant Stadium'
+          location: 'Allegiant Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Broncos',
@@ -46,7 +48,8 @@ export default {
           day: 21,
           hour: 13,
           minute: 5,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Giants',
@@ -55,7 +58,8 @@ export default {
           day: 28,
           hour: 10,
           minute: 0,
-          location: 'MetLife Stadium'
+          location: 'MetLife Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Commanders',
@@ -64,7 +68,8 @@ export default {
           day: 5,
           hour: 13,
           minute: 25,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Dolphins',
@@ -73,7 +78,8 @@ export default {
           day: 12,
           hour: 10,
           minute: 0,
-          location: 'Hard Rock Stadium'
+          location: 'Hard Rock Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Colts',
@@ -82,7 +88,8 @@ export default {
           day: 19,
           hour: 13,
           minute: 5,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Vikings',
@@ -91,7 +98,8 @@ export default {
           day: 23,
           hour: 17,
           minute: 15,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Titans',
@@ -100,7 +108,8 @@ export default {
           day: 2,
           hour: 10,
           minute: 0,
-          location: 'Nissan Stadium'
+          location: 'Nissan Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Steelers',
@@ -109,7 +118,8 @@ export default {
           day: 9,
           hour: 17,
           minute: 20,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Jaguars',
@@ -118,7 +128,8 @@ export default {
           day: 16,
           hour: 10,
           minute: 0,
-          location: 'EverBank Stadium'
+          location: 'EverBank Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Raiders',
@@ -127,7 +138,8 @@ export default {
           day: 30,
           hour: 13,
           minute: 25,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Eagles',
@@ -136,7 +148,8 @@ export default {
           day: 8,
           hour: 17,
           minute: 15,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Chiefs',
@@ -145,7 +158,8 @@ export default {
           day: 14,
           hour: 10,
           minute: 0,
-          location: 'GEHA Field at Arrowhead Stadium'
+          location: 'GEHA Field at Arrowhead Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Cowboys',
@@ -154,7 +168,8 @@ export default {
           day: 21,
           hour: 10,
           minute: 0,
-          location: 'AT&T Stadium'
+          location: 'AT&T Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Texans',
@@ -163,7 +178,8 @@ export default {
           day: 29,
           hour: 'TBD',
           minute: 0,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Chargers vs Broncos',

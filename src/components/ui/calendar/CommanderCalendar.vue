@@ -28,7 +28,8 @@ export default {
           day: 7,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Packers',
@@ -37,7 +38,8 @@ export default {
           day: 11,
           hour: 20,
           minute: 15,
-          location: 'Lambeau Field'
+          location: 'Lambeau Field',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Raiders',
@@ -46,7 +48,8 @@ export default {
           day: 21,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Falcons',
@@ -55,7 +58,8 @@ export default {
           day: 28,
           hour: 13,
           minute: 0,
-          location: 'Mercedes-Benz Stadium'
+          location: 'Mercedes-Benz Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Chargers',
@@ -64,7 +68,8 @@ export default {
           day: 5,
           hour: 16,
           minute: 25,
-          location: 'SoFi Stadium'
+          location: 'SoFi Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Bears',
@@ -73,7 +78,8 @@ export default {
           day: 13,
           hour: 20,
           minute: 15,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Cowboys',
@@ -82,7 +88,8 @@ export default {
           day: 19,
           hour: 16,
           minute: 25,
-          location: 'AT&T Stadium'
+          location: 'AT&T Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Chiefs',
@@ -91,7 +98,8 @@ export default {
           day: 27,
           hour: 20,
           minute: 15,
-          location: 'Arrowhead Stadium'
+          location: 'Arrowhead Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Seahawks',
@@ -100,7 +108,8 @@ export default {
           day: 2,
           hour: 20,
           minute: 20,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Lions',
@@ -109,7 +118,8 @@ export default {
           day: 9,
           hour: 16,
           minute: 25,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Dolphins',
@@ -118,7 +128,8 @@ export default {
           day: 16,
           hour: 9,
           minute: 30,
-          location: 'Hard Rock Stadium'
+          location: 'Hard Rock Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Broncos',
@@ -127,7 +138,8 @@ export default {
           day: 30,
           hour: 20,
           minute: 20,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Vikings',
@@ -136,7 +148,8 @@ export default {
           day: 7,
           hour: 13,
           minute: 0,
-          location: 'U.S. Bank Stadium'
+          location: 'U.S. Bank Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Giants',
@@ -145,7 +158,8 @@ export default {
           day: 14,
           hour: 13,
           minute: 0,
-          location: 'MetLife Stadium'
+          location: 'MetLife Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Eagles',
@@ -154,7 +168,8 @@ export default {
           day: 20,
           hour: 'TBD',
           minute: 0,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Cowboys',
@@ -163,7 +178,8 @@ export default {
           day: 25,
           hour: 13,
           minute: 0,
-          location: 'Northwest Stadium'
+          location: 'Northwest Stadium',
+          year: 2025
         }),
         createEvent({
           title: '🏈 Commanders vs Eagles',
@@ -172,7 +188,8 @@ export default {
           day: 4,
           hour: 'TBD',
           minute: 0,
-          location: 'Lincoln Financial Field'
+          location: 'Lincoln Financial Field',
+          year: 2025
         })
       ]
     }
