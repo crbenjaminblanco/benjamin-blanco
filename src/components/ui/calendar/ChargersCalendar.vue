@@ -20,40 +20,40 @@ export default {
     return {
       baseEvents: [
         createEvent({
-          title: '🏈 Chargers vs Raiders',
+          title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 1',
           month: 9,
-          day: 8,
-          hour: 13,
+          day: 5,
+          hour: 17,
           minute: 0,
-          location: 'SoFi Stadium'
+          location: 'Arena Corinthians'
         }),
         createEvent({
-          title: '🏈 Chargers vs Panthers',
+          title: '🏈 Chargers vs Raiders',
           description: 'NFL Week 2',
           month: 9,
           day: 15,
-          hour: 13,
+          hour: 19,
           minute: 0,
-          location: 'SoFi Stadium'
+          location: 'Allegiant Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Steelers',
+          title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 3',
           month: 9,
-          day: 22,
+          day: 21,
           hour: 13,
-          minute: 0,
+          minute: 5,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Chiefs',
+          title: '🏈 Chargers vs Giants',
           description: 'NFL Week 4',
           month: 9,
-          day: 29,
-          hour: 13,
+          day: 28,
+          hour: 10,
           minute: 0,
-          location: 'Arrowhead Stadium'
+          location: 'MetLife Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Commanders',
@@ -65,67 +65,58 @@ export default {
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Broncos',
+          title: '🏈 Chargers vs Dolphins',
           description: 'NFL Week 6',
           month: 10,
-          day: 13,
-          hour: 13,
+          day: 12,
+          hour: 10,
           minute: 0,
-          location: 'SoFi Stadium'
+          location: 'Hard Rock Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Cardinals',
+          title: '🏈 Chargers vs Colts',
           description: 'NFL Week 7',
           month: 10,
-          day: 20,
+          day: 19,
           hour: 13,
-          minute: 0,
+          minute: 5,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Ravens',
+          title: '🏈 Chargers vs Vikings',
           description: 'NFL Week 8',
           month: 10,
-          day: 27,
-          hour: 13,
-          minute: 0,
-          location: 'M&T Bank Stadium'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Browns',
-          description: 'NFL Week 9',
-          month: 11,
-          day: 3,
-          hour: 13,
-          minute: 0,
-          location: 'Cleveland Browns Stadium'
-        }),
-        createEvent({
-          title: '🏈 Chargers vs Lions',
-          description: 'NFL Week 10',
-          month: 11,
-          day: 10,
-          hour: 13,
-          minute: 0,
+          day: 23,
+          hour: 17,
+          minute: 15,
           location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Packers',
-          description: 'NFL Week 11',
+          title: '🏈 Chargers vs Titans',
+          description: 'NFL Week 9',
           month: 11,
-          day: 17,
-          hour: 13,
+          day: 2,
+          hour: 10,
           minute: 0,
-          location: 'Lambeau Field'
+          location: 'Nissan Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Bills',
-          description: 'NFL Week 12',
+          title: '🏈 Chargers vs Steelers',
+          description: 'NFL Week 10',
           month: 11,
-          day: 24,
-          hour: 13,
+          day: 9,
+          hour: 17,
+          minute: 20,
+          location: 'SoFi Stadium'
+        }),
+        createEvent({
+          title: '🏈 Chargers vs Jaguars',
+          description: 'NFL Week 11',
+          month: 11,
+          day: 16,
+          hour: 10,
           minute: 0,
-          location: 'Highmark Stadium'
+          location: 'EverBank Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Raiders',
@@ -134,52 +125,53 @@ export default {
           day: 30,
           hour: 13,
           minute: 25,
-          location: 'Allegiant Stadium'
+          location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Broncos',
+          title: '🏈 Chargers vs Eagles',
           description: 'NFL Week 14',
           month: 12,
           day: 8,
-          hour: 13,
-          minute: 0,
+          hour: 17,
+          minute: 15,
           location: 'SoFi Stadium'
         }),
         createEvent({
           title: '🏈 Chargers vs Chiefs',
           description: 'NFL Week 15',
           month: 12,
-          day: 15,
-          hour: 13,
+          day: 14,
+          hour: 10,
           minute: 0,
-          location: 'SoFi Stadium'
+          location: 'GEHA Field at Arrowhead Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Bengals',
+          title: '🏈 Chargers vs Cowboys',
           description: 'NFL Week 16',
           month: 12,
-          day: 22,
-          hour: 13,
+          day: 21,
+          hour: 10,
           minute: 0,
-          location: 'Paycor Stadium'
+          location: 'AT&T Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Broncos',
+          title: '🏈 Chargers vs Texans',
           description: 'NFL Week 17',
           month: 12,
           day: 29,
-          hour: 13,
-          minute: 25,
-          location: 'Empower Field at Mile High'
+          hour: 'TBD',
+          minute: 0,
+          location: 'SoFi Stadium'
         }),
         createEvent({
-          title: '🏈 Chargers vs Raiders',
+          title: '🏈 Chargers vs Broncos',
           description: 'NFL Week 18',
           month: 1,
           day: 5,
-          hour: 13,
-          minute: 25,
-          location: 'SoFi Stadium'
+          hour: 'TBD',
+          minute: 0,
+          location: 'Empower Field at Mile High',
+          year: 2026
         })
       ]
     }

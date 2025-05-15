@@ -15,7 +15,7 @@ export default {
   components: {
     BaseCalendar
   },
-
+  
   data() {
     return {
       baseEvents: [
@@ -24,7 +24,7 @@ export default {
           description: 'NFL Week 1',
           month: 9,
           day: 7,
-          hour: 11,
+          hour: 13,
           minute: 0,
           location: 'Northwest Stadium'
         }),
@@ -32,9 +32,9 @@ export default {
           title: '🏈 Commanders vs Packers',
           description: 'NFL Week 2',
           month: 9,
-          day: 15,
-          hour: 11,
-          minute: 0,
+          day: 11,
+          hour: 20,
+          minute: 15,
           location: 'Lambeau Field'
         }),
         createEvent({
@@ -42,7 +42,7 @@ export default {
           description: 'NFL Week 3',
           month: 9,
           day: 21,
-          hour: 11,
+          hour: 13,
           minute: 0,
           location: 'Northwest Stadium'
         }),
@@ -51,7 +51,7 @@ export default {
           description: 'NFL Week 4',
           month: 9,
           day: 28,
-          hour: 11,
+          hour: 13,
           minute: 0,
           location: 'Mercedes-Benz Stadium'
         }),
@@ -60,7 +60,7 @@ export default {
           description: 'NFL Week 5',
           month: 10,
           day: 5,
-          hour: 14,
+          hour: 16,
           minute: 25,
           location: 'SoFi Stadium'
         }),
@@ -69,8 +69,8 @@ export default {
           description: 'NFL Week 6',
           month: 10,
           day: 13,
-          hour: 11,
-          minute: 0,
+          hour: 20,
+          minute: 15,
           location: 'Northwest Stadium'
         }),
         createEvent({
@@ -78,7 +78,7 @@ export default {
           description: 'NFL Week 7',
           month: 10,
           day: 19,
-          hour: 14,
+          hour: 16,
           minute: 25,
           location: 'AT&T Stadium'
         }),
@@ -87,7 +87,7 @@ export default {
           description: 'NFL Week 8',
           month: 10,
           day: 27,
-          hour: 18,
+          hour: 20,
           minute: 15,
           location: 'Arrowhead Stadium'
         }),
@@ -96,8 +96,8 @@ export default {
           description: 'NFL Week 9',
           month: 11,
           day: 2,
-          hour: 11,
-          minute: 0,
+          hour: 20,
+          minute: 20,
           location: 'Northwest Stadium'
         }),
         createEvent({
@@ -105,8 +105,8 @@ export default {
           description: 'NFL Week 10',
           month: 11,
           day: 9,
-          hour: 11,
-          minute: 0,
+          hour: 16,
+          minute: 25,
           location: 'Northwest Stadium'
         }),
         createEvent({
@@ -114,7 +114,7 @@ export default {
           description: 'NFL Week 11',
           month: 11,
           day: 16,
-          hour: 7,
+          hour: 9,
           minute: 30,
           location: 'Hard Rock Stadium'
         }),
@@ -123,8 +123,8 @@ export default {
           description: 'NFL Week 13',
           month: 11,
           day: 30,
-          hour: 11,
-          minute: 0,
+          hour: 20,
+          minute: 20,
           location: 'Northwest Stadium'
         }),
         createEvent({
@@ -132,7 +132,7 @@ export default {
           description: 'NFL Week 14',
           month: 12,
           day: 7,
-          hour: 11,
+          hour: 13,
           minute: 0,
           location: 'U.S. Bank Stadium'
         }),
@@ -141,7 +141,7 @@ export default {
           description: 'NFL Week 15',
           month: 12,
           day: 14,
-          hour: 11,
+          hour: 13,
           minute: 0,
           location: 'MetLife Stadium'
         }),
@@ -150,9 +150,27 @@ export default {
           description: 'NFL Week 16',
           month: 12,
           day: 20,
-          hour: 11,
+          hour: 'TBD',
           minute: 0,
           location: 'Northwest Stadium'
+        }),
+        createEvent({
+          title: '🏈 Commanders vs Cowboys',
+          description: 'NFL Week 17',
+          month: 12,
+          day: 25,
+          hour: 13,
+          minute: 0,
+          location: 'Northwest Stadium'
+        }),
+        createEvent({
+          title: '🏈 Commanders vs Eagles',
+          description: 'NFL Week 18',
+          month: 1,
+          day: 4,
+          hour: 'TBD',
+          minute: 0,
+          location: 'Lincoln Financial Field'
         })
       ]
     }
