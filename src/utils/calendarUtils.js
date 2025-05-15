@@ -34,15 +34,20 @@ export const generateICSContent = (events, platform) => {
     'PRODID:-//Benjamin Blanco//NFL Calendar//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
-    'X-WR-CALNAME:NFL',
-    'X-WR-TIMEZONE:UTC',
-    'X-WR-CATEGORIES:NFL'
+    'X-WR-TIMEZONE:UTC'
   ]
 
   if (platform === 'ios') {
     icsContent.push(
+      'X-WR-CALNAME:NFL Schedule',
       'X-APPLE-CALENDAR-COLOR:#FF0000',
-      'X-APPLE-CALENDAR-COLOR-NAME:NFL'
+      'X-APPLE-CALENDAR-COLOR-NAME:NFL',
+      'X-APPLE-CALENDAR-COLOR-INDEX:1'
+    )
+  } else {
+    icsContent.push(
+      'X-WR-CALNAME:NFL',
+      'X-WR-CATEGORIES:NFL'
     )
   }
 
