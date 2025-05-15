@@ -64,23 +64,12 @@ export const generateICSContent = (events, platform) => {
       new Date(date.getTime() + 3 * 60 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z' :
       new Date(date.getTime() + 3 * 60 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
-    // Extract teams from title (assuming format "🏈 Team vs Opponent" or "🏈 Team @ Opponent")
-    const titleParts = event.title.split(' vs ')
-    const isHomeGame = titleParts.length > 1
-    const teamName = event.title.split(' ')[1] // Get team name after emoji
-    const opponent = isHomeGame ? titleParts[1] : event.title.split(' @ ')[1]
-
-    // Format title: home team always on the left
-    const formattedTitle = isHomeGame ? 
-      `🏈 ${teamName} vs ${opponent}` :
-      `🏈 ${opponent} vs ${teamName}`
-
     let eventContent = [
       'BEGIN:VEVENT',
       'DTSTAMP:' + now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
       'DTSTART:' + startTime,
       'DTEND:' + endTime,
-      'SUMMARY:' + formattedTitle,
+      'SUMMARY:' + event.title,
       'DESCRIPTION:' + event.description,
       'LOCATION:' + event.location,
       'CATEGORIES:NFL',
