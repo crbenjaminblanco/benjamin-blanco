@@ -31,157 +31,157 @@ export default {
       // Base events in local time
       baseEvents: [
         {
-          title: 'NFL Week 1',
-          description: '🏈 Los Angeles Chargers vs Las Vegas Raiders',
+          title: '🏈 Chargers vs Chiefs',
+          description: 'NFL Week 1',
           month: 9,
-          day: 8,
-          hour: 13,
+          day: 5,
+          hour: 17,
           duration: 3,
-          isHome: true
+          isHome: false
         },
         {
-          title: 'NFL Week 2',
-          description: '🏈 Los Angeles Chargers vs Kansas City Chiefs',
+          title: '🏈 Chargers vs Raiders',
+          description: 'NFL Week 2',
           month: 9,
           day: 15,
-          hour: 13,
+          hour: 19,
           duration: 3,
           isHome: false
         },
         {
-          title: 'NFL Week 3',
-          description: '🏈 Los Angeles Chargers vs Denver Broncos',
+          title: '🏈 Chargers vs Broncos',
+          description: 'NFL Week 3',
           month: 9,
-          day: 22,
+          day: 21,
           hour: 13,
           duration: 3,
           isHome: true
         },
         {
-          title: 'NFL Week 4',
-          description: '🏈 Los Angeles Chargers vs Baltimore Ravens',
+          title: '🏈 Chargers vs Giants',
+          description: 'NFL Week 4',
           month: 9,
-          day: 29,
-          hour: 13,
+          day: 28,
+          hour: 10,
           duration: 3,
           isHome: false
         },
         {
-          title: 'NFL Week 5',
-          description: '🏈 Los Angeles Chargers vs Cleveland Browns',
+          title: '🏈 Chargers vs Commanders',
+          description: 'NFL Week 5',
           month: 10,
-          day: 6,
+          day: 5,
           hour: 13,
           duration: 3,
           isHome: true
         },
         {
-          title: 'NFL Week 6',
-          description: '🏈 Los Angeles Chargers vs Pittsburgh Steelers',
+          title: '🏈 Chargers vs Dolphins',
+          description: 'NFL Week 6',
           month: 10,
-          day: 13,
-          hour: 13,
+          day: 12,
+          hour: 10,
           duration: 3,
           isHome: false
         },
         {
-          title: 'NFL Week 7',
-          description: '🏈 Los Angeles Chargers vs Tennessee Titans',
+          title: '🏈 Chargers vs Colts',
+          description: 'NFL Week 7',
           month: 10,
-          day: 20,
+          day: 19,
           hour: 13,
           duration: 3,
           isHome: true
         },
         {
-          title: 'NFL Week 8',
-          description: '🏈 Los Angeles Chargers vs Indianapolis Colts',
+          title: '🏈 Chargers vs Vikings',
+          description: 'NFL Week 8',
           month: 10,
-          day: 27,
-          hour: 13,
+          day: 23,
+          hour: 17,
+          duration: 3,
+          isHome: true
+        },
+        {
+          title: '🏈 Chargers vs Titans',
+          description: 'NFL Week 9',
+          month: 11,
+          day: 2,
+          hour: 10,
           duration: 3,
           isHome: false
         },
         {
-          title: 'NFL Week 9',
-          description: '🏈 Los Angeles Chargers vs New York Jets',
+          title: '🏈 Chargers vs Steelers',
+          description: 'NFL Week 10',
           month: 11,
-          day: 3,
+          day: 9,
+          hour: 17,
+          duration: 3,
+          isHome: true
+        },
+        {
+          title: '🏈 Chargers vs Jaguars',
+          description: 'NFL Week 11',
+          month: 11,
+          day: 16,
+          hour: 10,
+          duration: 3,
+          isHome: false
+        },
+        {
+          title: '🏈 Chargers vs Raiders',
+          description: 'NFL Week 13',
+          month: 11,
+          day: 30,
           hour: 13,
           duration: 3,
           isHome: true
         },
         {
-          title: 'NFL Week 10',
-          description: '🏈 Los Angeles Chargers vs Buffalo Bills',
-          month: 11,
-          day: 10,
-          hour: 13,
-          duration: 3,
-          isHome: false
-        },
-        {
-          title: 'NFL Week 11',
-          description: '🏈 Los Angeles Chargers vs Miami Dolphins',
-          month: 11,
-          day: 17,
-          hour: 13,
-          duration: 3,
-          isHome: true
-        },
-        {
-          title: 'NFL Week 12',
-          description: '🏈 Los Angeles Chargers vs New England Patriots',
-          month: 11,
-          day: 24,
-          hour: 13,
-          duration: 3,
-          isHome: false
-        },
-        {
-          title: 'NFL Week 13',
-          description: '🏈 Los Angeles Chargers vs Cincinnati Bengals',
-          month: 12,
-          day: 1,
-          hour: 13,
-          duration: 3,
-          isHome: true
-        },
-        {
-          title: 'NFL Week 14',
-          description: '🏈 Los Angeles Chargers vs Jacksonville Jaguars',
+          title: '🏈 Chargers vs Eagles',
+          description: 'NFL Week 14',
           month: 12,
           day: 8,
-          hour: 13,
+          hour: 17,
+          duration: 3,
+          isHome: true
+        },
+        {
+          title: '🏈 Chargers vs Chiefs',
+          description: 'NFL Week 15',
+          month: 12,
+          day: 14,
+          hour: 10,
           duration: 3,
           isHome: false
         },
         {
-          title: 'NFL Week 15',
-          description: '🏈 Los Angeles Chargers vs Houston Texans',
+          title: '🏈 Chargers vs Cowboys',
+          description: 'NFL Week 16',
           month: 12,
-          day: 15,
+          day: 21,
+          hour: 10,
+          duration: 3,
+          isHome: false
+        },
+        {
+          title: '🏈 Chargers vs Texans',
+          description: 'NFL Week 17',
+          month: 12,
+          day: 28,
           hour: 13,
           duration: 3,
           isHome: true
         },
         {
-          title: 'NFL Week 16',
-          description: '🏈 Los Angeles Chargers vs Las Vegas Raiders',
-          month: 12,
-          day: 22,
+          title: '🏈 Chargers vs Broncos',
+          description: 'NFL Week 18',
+          month: 1,
+          day: 4,
           hour: 13,
           duration: 3,
           isHome: false
-        },
-        {
-          title: 'NFL Week 17',
-          description: '🏈 Los Angeles Chargers vs Kansas City Chiefs',
-          month: 12,
-          day: 29,
-          hour: 13,
-          duration: 3,
-          isHome: true
         }
       ]
     }

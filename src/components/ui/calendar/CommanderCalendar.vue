@@ -31,183 +31,258 @@ export default {
       componentKey: 0,
       events: [
         {
-          title: 'Commander Night - January',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250115T180000',
-          end: '20250115T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Giants',
+          description: 'NFL Week 1',
+          start: '20250907T130000',
+          end: '20250907T170000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
           }
         },
         {
-          title: 'Commander Night - February',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250212T180000',
-          end: '20250212T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Packers',
+          description: 'NFL Week 2',
+          start: '20250911T201500',
+          end: '20250911T241500',
+          location: 'Lambeau Field',
+          geo: { lat: 44.5013, lon: -88.0622 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1265 Lombardi Ave',
+            city: 'Green Bay',
+            state: 'WI',
+            country: 'USA',
+            postalCode: '54304'
           }
         },
         {
-          title: 'Commander Night - March',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250319T180000',
-          end: '20250319T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Raiders',
+          description: 'NFL Week 3',
+          start: '20250921T130000',
+          end: '20250921T170000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
           }
         },
         {
-          title: 'Commander Night - April',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250416T180000',
-          end: '20250416T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Falcons',
+          description: 'NFL Week 4',
+          start: '20250928T130000',
+          end: '20250928T170000',
+          location: 'Mercedes-Benz Stadium',
+          geo: { lat: 33.7550, lon: -84.4006 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1 AMB Drive NW',
+            city: 'Atlanta',
+            state: 'GA',
+            country: 'USA',
+            postalCode: '30313'
           }
         },
         {
-          title: 'Commander Night - May',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250514T180000',
-          end: '20250514T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Chargers',
+          description: 'NFL Week 5',
+          start: '20251005T162500',
+          end: '20251005T202500',
+          location: 'SoFi Stadium',
+          geo: { lat: 33.9535, lon: -118.3387 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1001 Stadium Dr',
+            city: 'Inglewood',
+            state: 'CA',
+            country: 'USA',
+            postalCode: '90301'
           }
         },
         {
-          title: 'Commander Night - June',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250618T180000',
-          end: '20250618T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Bears',
+          description: 'NFL Week 6',
+          start: '20251013T201500',
+          end: '20251013T241500',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
           }
         },
         {
-          title: 'Commander Night - July',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250716T180000',
-          end: '20250716T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Cowboys',
+          description: 'NFL Week 7',
+          start: '20251019T162500',
+          end: '20251019T202500',
+          location: 'AT&T Stadium',
+          geo: { lat: 32.7478, lon: -97.0928 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1 AT&T Way',
+            city: 'Arlington',
+            state: 'TX',
+            country: 'USA',
+            postalCode: '76011'
           }
         },
         {
-          title: 'Commander Night - August',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250813T180000',
-          end: '20250813T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Chiefs',
+          description: 'NFL Week 8',
+          start: '20251027T201500',
+          end: '20251027T241500',
+          location: 'Arrowhead Stadium',
+          geo: { lat: 39.0489, lon: -94.4839 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1 Arrowhead Dr',
+            city: 'Kansas City',
+            state: 'MO',
+            country: 'USA',
+            postalCode: '64129'
           }
         },
         {
-          title: 'Commander Night - September',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20250917T180000',
-          end: '20250917T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Seahawks',
+          description: 'NFL Week 9',
+          start: '20251102T202000',
+          end: '20251102T242000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
           }
         },
         {
-          title: 'Commander Night - October',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20251015T180000',
-          end: '20251015T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Lions',
+          description: 'NFL Week 10',
+          start: '20251109T162500',
+          end: '20251109T202500',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
           }
         },
         {
-          title: 'Commander Night - November',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20251119T180000',
-          end: '20251119T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Dolphins',
+          description: 'NFL Week 11',
+          start: '20251116T093000',
+          end: '20251116T133000',
+          location: 'Hard Rock Stadium',
+          geo: { lat: 25.9580, lon: -80.2389 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '347 Don Shula Dr',
+            city: 'Miami Gardens',
+            state: 'FL',
+            country: 'USA',
+            postalCode: '33056'
           }
         },
         {
-          title: 'Commander Night - December',
-          description: 'Monthly Commander games at Benjamin Blanco Calendars. Bring your Commander deck and join us for an evening of Magic: The Gathering!',
-          start: '20251217T180000',
-          end: '20251217T220000',
-          location: 'Benjamin Blanco Calendars, 100m norte del Parque Central, Zarcero, Alajuela, Costa Rica',
-          geo: { lat: 10.1857, lon: -84.3907 },
+          title: '🏈 Commanders vs Broncos',
+          description: 'NFL Week 13',
+          start: '20251130T202000',
+          end: '20251130T242000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
           address: {
-            street: '100m norte del Parque Central',
-            city: 'Zarcero',
-            state: 'Alajuela',
-            country: 'Costa Rica',
-            postalCode: '20501'
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
+          }
+        },
+        {
+          title: '🏈 Commanders vs Vikings',
+          description: 'NFL Week 14',
+          start: '20251207T130000',
+          end: '20251207T170000',
+          location: 'U.S. Bank Stadium',
+          geo: { lat: 44.9739, lon: -93.2581 },
+          address: {
+            street: '401 Chicago Ave',
+            city: 'Minneapolis',
+            state: 'MN',
+            country: 'USA',
+            postalCode: '55415'
+          }
+        },
+        {
+          title: '🏈 Commanders vs Giants',
+          description: 'NFL Week 15',
+          start: '20251214T130000',
+          end: '20251214T170000',
+          location: 'MetLife Stadium',
+          geo: { lat: 40.8135, lon: -74.0744 },
+          address: {
+            street: '1 MetLife Stadium Dr',
+            city: 'East Rutherford',
+            state: 'NJ',
+            country: 'USA',
+            postalCode: '07073'
+          }
+        },
+        {
+          title: '🏈 Commanders vs Eagles',
+          description: 'NFL Week 16',
+          start: '20251220T130000',
+          end: '20251220T170000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
+          address: {
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
+          }
+        },
+        {
+          title: '🏈 Commanders vs Cowboys',
+          description: 'NFL Week 17',
+          start: '20251225T130000',
+          end: '20251225T170000',
+          location: 'Northwest Stadium',
+          geo: { lat: 38.9078, lon: -76.8644 },
+          address: {
+            street: '1600 FedEx Way',
+            city: 'Landover',
+            state: 'MD',
+            country: 'USA',
+            postalCode: '20785'
+          }
+        },
+        {
+          title: '🏈 Commanders vs Eagles',
+          description: 'NFL Week 18',
+          start: '20260104T130000',
+          end: '20260104T170000',
+          location: 'Lincoln Financial Field',
+          geo: { lat: 39.9008, lon: -75.1675 },
+          address: {
+            street: '1 Lincoln Financial Field Way',
+            city: 'Philadelphia',
+            state: 'PA',
+            country: 'USA',
+            postalCode: '19148'
           }
         }
       ]
