@@ -66,7 +66,7 @@ export const generateICSContent = (events, teamName) => {
   return icsContent.join('\r\n')
 }
 
-export const downloadCalendar = (events, teamName, platform) => {
+export const downloadCalendar = (events, teamName) => {
   const icsContent = generateICSContent(events, teamName)
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
   const link = document.createElement('a')
